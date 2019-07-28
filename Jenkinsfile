@@ -47,8 +47,8 @@ spec:
             export VERSION=1.0.${BUILD_NUMBER}
             set
             /kaniko/executor --context=dir://${WORKSPACE} --dockerfile=Dockerfile --cache=true \
-              --destination=tribitio/terraform-gcp:${VERSION} \
-              --destination=tribitio/terraform-gcp:latest
+              --destination=tribitio/cnc-aks:${VERSION} \
+              --destination=tribitio/cnc-aks:latest
             '''
         }
       }
